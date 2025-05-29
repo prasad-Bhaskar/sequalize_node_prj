@@ -1,24 +1,36 @@
 {
   "name": "sequalizenodeprj",
   "version": "1.0.0",
-  "description": "Project is for integration of sequlize ORM setup",
+  "description": "THis is typeScript project ",
   "keywords": [
-    "sequalize",
-    "ORM"
+    "typescript",
+    "project"
   ],
+  "homepage": "https://github.com/prasad-Bhaskar/sequalize_node_prj#readme",
+  "bugs": {
+    "url": "https://github.com/prasad-Bhaskar/sequalize_node_prj/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prasad-Bhaskar/sequalize_node_prj.git"
+  },
   "license": "ISC",
-  "author": "Ram",
+  "author": "prasad-bhaskar",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "dev"
+    "migrate": "cross-env NODE_OPTIONS=-r ts-node/register sequelize-cli db:migrate",
+    "migrate:undo": "cross-env NODE_OPTIONS=-r ts-node/register sequelize-cli db:migrate:undo"
   },
   "dependencies": {
-    "express": "^5.1.0",
     "mysql2": "^3.14.1",
     "sequelize": "^6.37.7"
   },
   "devDependencies": {
-    "sequelize-cli": "^6.6.3"
+    "@types/node": "^22.15.24",
+    "@types/sequelize": "^4.28.20",
+    "sequelize-cli": "^6.6.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }
