@@ -1,0 +1,19 @@
+{
+  "name": "sequalizenodeprj",
+  "version": "1.0.0",
+  "description": "Project is for integration of sequlize ORM setup",
+  "keywords": [
+    "sequalize",
+    "ORM"
+  ],
+  "license": "ISC",
+  "author": "Ram",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "dev"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
